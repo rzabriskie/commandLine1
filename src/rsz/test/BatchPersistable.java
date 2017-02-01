@@ -6,6 +6,7 @@ package rsz.test;
 public interface BatchPersistable {
 
     public void addToBatch(final String sqlInsert);
+    public void addToBatch(final String name, final String value);
 
     public void commitBatch();
 

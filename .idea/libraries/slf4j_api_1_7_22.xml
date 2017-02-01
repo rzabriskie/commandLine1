@@ -4,6 +4,8 @@
       <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/postgresql-9.4.1212.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-driver-3.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bson-3.0.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

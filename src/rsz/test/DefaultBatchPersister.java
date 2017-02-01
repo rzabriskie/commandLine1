@@ -84,6 +84,11 @@ public class DefaultBatchPersister implements BatchPersistable {
     }
 
     @Override
+    public void addToBatch(String name, String value) {
+        addToBatch(String.format("insert into names values('%s','%s'", name, value));
+    }
+
+    @Override
     public void commitBatch() {
 
         try {

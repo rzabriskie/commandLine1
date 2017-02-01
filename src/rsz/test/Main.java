@@ -24,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 public class Main {
 
     public static final Logger LOGGER = LogManager.getLogger(Main.class);
-    public static final long NUMBER_OF_ROWS = 1234567;
+    public static final long NUMBER_OF_ROWS = 1234; //1234567;
 
     public static void main(String[] args) {
         LOGGER.trace("test...");
@@ -38,7 +38,8 @@ public class Main {
 
         long start = System.nanoTime();
         for (long i = 0; i< NUMBER_OF_ROWS; i++) {
-            persister.addToBatch(String.format("insert into names values('%d','%d')",i,i));
+//            persister.addToBatch(String.format("insert into names values('%d','%d')",i,i));
+            persister.addToBatch(String.valueOf(i),String.valueOf(i));
             if (i % 10000 == 0) {
                 LOGGER.info(String.format("row count %d",i));
             }
